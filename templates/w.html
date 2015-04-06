@@ -1,0 +1,55 @@
+<div class="container" ng-controller="wCtrl">
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="#/cv">C</a>
+        </div>
+        <div class="col-sm-6">
+            <a href="#/w">W</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addAdjective()">Adjective</button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addAdverb()">Adverb</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addNoun()">Noun</button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addPreposition()">Preposition</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addPronoun()">Pronoun</button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn" ng-click="addVerb()">Verb</button>
+        </div>
+    </div>
+    <div class="row">
+        <span ng-repeat="element in input" class="{{element.class}}">{{element.name}}</span>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn" ng-click="clear()">Clear</button>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn" ng-click="removeLast()">Remove</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn" ng-click="generate()">Generate</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <span>{{generated}}</span>
+        </div>
+    </div>
+</div>
