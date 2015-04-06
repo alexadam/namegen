@@ -32,16 +32,39 @@
 }
 
 .entBtn {
-    background-color: #eee;
+    background-color: #fff;
     width: 100%;
     text-align: left;
 }
 
-.genBtn, .genBtn:focus, .genBtn:hover {
+.entBtnRight {
+    background-color: #fff;
+    width: 100%;
+    text-align: right;
+}
+
+.entBtn:hover,
+.entBtnRight:hover {
+    background-color: #eee;
+    width: 100%;
+}
+
+.genBtn,
+.genBtn:focus,
+.genBtn:hover {
     background-color: darkviolet;
     color: white;
     font-weight: bolder;
     font-size: 15px;
+}
+
+.rndBtn {
+    text-align: center;
+    padding: 20px;
+}
+
+.white {
+    background-color: white;
 }
 
 a {
@@ -55,6 +78,19 @@ a {
     padding: 10px;
     font-size: 20px;
     margin-left: 3px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.entRight {
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
 }
 
 .cmd {
