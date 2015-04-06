@@ -110,6 +110,11 @@ namegen.controller('cvCtrl', function ($scope) {
     $scope.generate = function () {
         $scope.generated = generateConsVow($scope.inputStr);
     }
+    $scope.random = function () {
+        var funcs = [$scope.addCons, $scope.addVow];
+        var nf = funcs[Math.round(Math.random() * (funcs.length - 1))];
+        nf.apply();
+    }
 
 });
 
@@ -180,7 +185,7 @@ namegen.controller('wCtrl', function ($scope) {
         $scope.input = [];
     };
     $scope.removeLast = function () {
-        $scope.splice($scope.input.length - 1, 1);
+        $scope.input.splice($scope.input.length - 1, 1);
     };
     $scope.arrToStr = function () {
         $scope.inputStr = '';
@@ -190,6 +195,11 @@ namegen.controller('wCtrl', function ($scope) {
     };
     $scope.generate = function () {
         $scope.generated = generateWords($scope.inputStr);
+    }
+    $scope.random = function () {
+        var funcs = [$scope.addAdjective, $scope.addAdverb, $scope.addNoun, $scope.addPreposition, $scope.addPronoun, $scope.addVerb];
+        var nf = funcs[Math.round(Math.random() * (funcs.length - 1))];
+        nf.apply();
     }
 
 });

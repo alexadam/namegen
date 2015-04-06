@@ -1,54 +1,57 @@
 <div class="container" ng-controller="wCtrl">
-    <div class="row">
+    <div class="row text-center">
         <div class="col-sm-6">
-            <a href="#/cv">C</a>
+            <a href="#/cv">Cons/Wovs</a>
         </div>
         <div class="col-sm-6">
-            <a href="#/w">W</a>
+            <a href="#/w">Words</a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addAdjective()"><span class="ent cmd j">J</span>Adjective</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addAdverb()"><span class="ent cmd a">A</span>Adverb</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addNoun()"><span class="ent cmd n">N</span>Noun</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addPreposition()"><span class="ent cmd r">R</span>Preposition</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addPronoun()"><span class="ent cmd p">P</span>Pronoun</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn entBtn" ng-click="addVerb()"><span class="ent cmd v">V</span>Verb</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <button class="btn" ng-click="random()">rAnDOm</button>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12 showOutput">
+            <span ng-repeat="element in input" class="ent {{element.class}}">{{element.name | uppercase}}</span>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addAdjective()">Adjective</button>
-        </div>
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addAdverb()">Adverb</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addNoun()">Noun</button>
-        </div>
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addPreposition()">Preposition</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addPronoun()">Pronoun</button>
-        </div>
-        <div class="col-sm-6">
-            <button class="btn" ng-click="addVerb()">Verb</button>
-        </div>
-    </div>
-    <div class="row">
-        <span ng-repeat="element in input" class="{{element.class}}">{{element.name}}</span>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 text-left">
             <button class="btn" ng-click="clear()">Clear</button>
         </div>
-        <div class="col-sm-6">
-            <button class="btn" ng-click="removeLast()">Remove</button>
+        <div class="col-sm-6 text-right">
+            <button class="btn" ng-click="removeLast()">&larr; Remove</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <button class="btn genBtn" ng-click="generate()">Generate</button>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <button class="btn" ng-click="generate()">Generate</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 showGenerated">
             <span>{{generated}}</span>
         </div>
     </div>

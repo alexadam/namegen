@@ -1,0 +1,97 @@
+@font-face {
+    font-family: existence;
+    src: url(../fonts/Existence-Light.otf);
+}
+
+@font-face {
+    font-family: capsula;
+    src: url(../fonts/Capsuula.ttf);
+}
+
+* {
+    font-family: existence;
+}
+
+.row {
+    padding: 10px 0;
+}
+
+.showOutput {
+    text-align: center;
+}
+
+.showGenerated {
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 50px;
+}
+
+.btn {
+    background-color: #eee;
+}
+
+.entBtn {
+    background-color: #eee;
+    width: 100%;
+    text-align: left;
+}
+
+.genBtn, .genBtn:focus, .genBtn:hover {
+    background-color: darkviolet;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+
+.ent {
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.cmd {
+    margin-right: 10px;
+}
+
+.j {
+    background-color: #61AE24;
+    color: white;
+}
+
+.a {
+    background-color: #E54028;
+    color: white;
+}
+
+.n {
+    background-color: #D0D102;
+    color: white;
+}
+
+.r {
+    background-color: #616161;
+    color: white;
+}
+
+.p {
+    background-color: #00A1CB;
+    color: white;
+}
+
+.c {
+    background-color: #113F8C;
+    color: white;
+}
+
+.v {
+    background-color: #F18D05;
+    color: white;
+}
