@@ -16,8 +16,14 @@
     padding: 10px 0;
 }
 
+/*data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA5IjSqisyIA0EgBBS81/ewAAAAASUVORK5CYII=*/
 .showOutput {
     text-align: center;
+    background:url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA4YjyqisyIAlxIB/2n+IBUAAAAASUVORK5CYII=
+        
+    ) repeat;
+    padding: 20px;
 }
 
 .showGenerated {

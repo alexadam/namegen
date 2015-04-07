@@ -77,6 +77,7 @@ namegen.controller('cvCtrl', function ($scope) {
         name: 'v',
         class: 'v'
 }];
+
     $scope.generated = '';
 
     $scope.$watchCollection('input', function () {
