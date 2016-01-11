@@ -1,7 +1,12 @@
-namegen
-=======
+#namegen
 
 generate random text based on a pattern
+
+## Demo
+
+https://alexadam.github.io/demos/namegen/index.html
+
+## Examples
 
 ![alt result](https://github.com/alexadam/namegen/blob/master/ex1.png)
 
