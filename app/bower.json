@@ -2,7 +2,7 @@
   "name": "namegen",
   "version": "0.0.0",
   "authors": [
-    "alex <alex@eg312.com>"
+    "alex adam <alex@eg312.com>"
   ],
   "description": "Generate Random Names",
   "main": "index.html",

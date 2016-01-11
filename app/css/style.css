@@ -10,6 +10,7 @@
 
 * {
     font-family: existence;
+
 }
 
 .row {
@@ -21,7 +22,7 @@
     text-align: center;
     background:url(
         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA4YjyqisyIAlxIB/2n+IBUAAAAASUVORK5CYII=
-        
+
     ) repeat;
     padding: 20px;
 }
@@ -35,6 +36,7 @@
 
 .btn {
     background-color: #eee;
+    color: black;
 }
 
 .entBtn {
